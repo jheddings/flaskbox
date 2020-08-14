@@ -6,7 +6,7 @@ BASEDIR ?= $(shell dirname "$(realpath $(lastword $(MAKEFILE_LIST)))")
 SRCDIR ?= $(BASEDIR)/src
 
 APPNAME ?= flaskbox
-APPVER ?= 1.0
+APPVER ?= 1.1
 
 PY := PYTHONPATH="$(SRCDIR)" python3
 
