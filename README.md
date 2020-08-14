@@ -9,7 +9,7 @@ Python libraries in the application environment.
 
 ## Running ##
 
-To invokve the container, simply run `make run` from the base directory.  The sample
+To launch the container, simply `make run` from the base directory.  The sample
 application will be available at http://localhost:5000
 
 ## Customizing ##
