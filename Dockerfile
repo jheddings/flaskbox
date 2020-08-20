@@ -11,7 +11,10 @@ RUN apt-get autoremove --assume-yes && apt-get clean
 
 ## update python libraries and install common dependencies
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install pyyaml requests sqlalchemy flask flask_sqlalchemy flask-wtf
+RUN python3 -m pip install \
+  pyyaml requests sqlalchemy \
+  flask flask_sqlalchemy flask-wtf \
+  celery rq
 
 # set up site wide files
 WORKDIR "/opt/site/static"
